@@ -1,0 +1,38 @@
+name: Save Note to Notion
+
+on:
+  repository_dispatch:
+    types: [save_note]
+
+permissions:
+  contents: write
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install "notion-client<2.0"
+
+      - name: Run script
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DB_ID: ${{ secrets.NOTION_DB_ID }}
+          NOTE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+        run: python save_note.py
+
+      - name: Commit export.json if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Update export.json"
+          git pull --rebase origin main
+          git push
