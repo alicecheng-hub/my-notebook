@@ -1,15 +1,6 @@
 {
   "notes": [
     {
-      "id": "1775187127299",
-      "type": "讀書心得",
-      "title": "22",
-      "content": "22",
-      "url": "22",
-      "imgUrl": "https://raw.githubusercontent.com/alicecheng-hub/my-notebook/main/images/1775187127299.jpg",
-      "date": "2026-04-03 03:32"
-    },
-    {
       "id": "1775186994627",
       "type": "讀書心得",
       "title": "",
@@ -19,5 +10,5 @@
       "date": "2026-04-03 03:30"
     }
   ],
-  "exported_at": "2026-04-03T03:32:20.328568"
+  "exported_at": "2026-04-03T03:34:17.232773"
 }
