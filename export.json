@@ -1,6 +1,15 @@
 {
   "notes": [
     {
+      "id": "1786783837748",
+      "type": "英文",
+      "title": "",
+      "content": "connecting flight轉轉機航班\nconnection 轉機\ntransfer 轉機、轉乘\ntransit 過境、轉機\nlayover轉機等待時間\ntransit passenger 轉機旅客\ndeparture 出發\narrival 抵達\ndeparture gate 登機門\nboarding pass 登機證\nconnecting gate 轉機登機門\ntransfer desk 轉機櫃檯\ntransit area 轉機區\ntransit security 轉機安檢\nbaggage claim 行李提領處\nchecked baggage 託運行李\ncarry-on luggage 隨身行李\nimmigration 入境審查",
+      "url": "",
+      "imgUrl": "",
+      "date": "2026-08-15 08:50"
+    },
+    {
       "id": "1777296408932",
       "type": "旅遊",
       "title": "",
@@ -361,5 +370,5 @@
       "date": "2026-04-03 03:49"
     }
   ],
-  "exported_at": "2026-08-14T17:05:03.479377"
+  "exported_at": "2026-08-15T08:50:50.416637"
 }
